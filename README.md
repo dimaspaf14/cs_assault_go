@@ -3,8 +3,8 @@
 This map is made for counter strike 1.6
 
 # Used tools:
-Valve Hammer Editor 3.5
-ZHLT 3.0
+-Valve Hammer Editor 3.5
+-ZHLT 3.0
 
 # How to compile:
 -download then copy & paste to your ZHLT Folder
