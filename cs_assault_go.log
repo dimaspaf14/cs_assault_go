@@ -1,0 +1,312 @@
+hlcsg v3.4 VL33 (Feb  2 2014)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlcsg -----
+Command line: hlcsg -nowadtextures cs_assault_go.map 
+Arguments: -nowadtextures cs_assault_go.map -low -wadautodetect 
+Entering cs_assault_go.map
+
+Current hlcsg Settings
+Name                 |  Setting  |  Default
+---------------------|-----------|-------------------------
+threads               [       4 ] [  Varies ]
+verbose               [     off ] [     off ]
+log                   [      on ] [      on ]
+reset logfile         [      on ] [      on ]
+developer             [       0 ] [       0 ]
+chart                 [     off ] [     off ]
+estimate              [     off ] [     off ]
+max texture memory    [ 33554432 ] [ 33554432 ]
+max lighting memory   [ 50331648 ] [ 50331648 ]
+priority              [     Low ] [  Normal ]
+
+noclip                [     off ] [     off ]
+null texture stripping[      on ] [      on ]
+clipnode economy mode [     off ] [     off ]
+clip hull type        [  simple ] [  simple ]
+onlyents              [     off ] [     off ]
+wadtextures           [     off ] [      on ]
+skyclip               [      on ] [      on ]
+hullfile              [    None ] [    None ]
+wad configuration file[    None ] [    None ]
+wad.cfg group name    [    None ] [    None ]
+nullfile              [    None ] [    None ]
+nullify trigger       [      on ] [      on ]
+min surface area      [   0.000 ] [   0.000 ]
+brush union threshold [   0.000 ] [   0.000 ]
+map scaling           [    None ] [    None ]
+light name optimize   [      on ] [      on ]
+UTF8 game_text        [      on ] [      on ]
+
+Using mapfile wad configuration
+Wadfiles not in use by the map will be excluded
+Wadinclude list :
+[zhlt.wad]
+
+CreateBrush:
+ (1.11 seconds)
+CSGBrush:
+ (2.92 seconds)
+
+added 19 additional animating textures.
+Including Wadfile: \documents and settings\dp14\desktop\zhlt\halflife\zhlt.wad
+ - Contains 4 used textures, 2.40 percent of map (19 textures in wad)
+Including Wadfile: \documents and settings\dp14\desktop\maps\dp14.wad
+ - Contains 4 used textures, 2.40 percent of map (13 textures in wad)
+Including Wadfile: \documents and settings\dp14\desktop\bsp2map\de_mirage_btm.wad
+ - Contains 2 used textures, 1.20 percent of map (77 textures in wad)
+Including Wadfile: \games\counter-strike warzone(clean)\valve\halflife.wad
+ - Contains 136 used textures, 81.44 percent of map (3116 textures in wad)
+Including Wadfile: \games\counter-strike warzone(clean)\cstrike\cs_assault.wad
+ - Contains 21 used textures, 12.57 percent of map (22 textures in wad)
+
+Wad files required to run the map: (None)
+Texture usage is at 2.30 mb (of 32.00 mb MAX)
+6.33 seconds elapsed
+
+-----   END   hlcsg -----
+
+
+
+hlbsp v3.4 VL33 (Feb  2 2014)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlbsp -----
+Command line: hlbsp cs_assault_go.map 
+Arguments: cs_assault_go.map -low -chart 
+
+Current hlbsp Settings
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       4 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [      on ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+priority            [     Low ] [  Normal ]
+
+noclip              [     off ] [     off ]
+nofill              [     off ] [     off ]
+noinsidefill        [     off ] [     off ]
+noopt               [     off ] [     off ]
+no clipnode merging [     off ] [     off ]
+null tex. stripping [      on ] [      on ]
+notjunc             [     off ] [     off ]
+nobrink             [     off ] [     off ]
+subdivide size      [     240 ] [     240 ] (Min 64) (Max 512)
+max node size       [    1024 ] [    1024 ] (Min 64) (Max 65536)
+remove hull 2       [     off ] [     off ]
+
+
+SolidBSP [hull 0] 500...1000...1500...2000...2500...2786 (1.63 seconds)
+BSP generation successful, writing portal file 'cs_assault_go.prt'
+SolidBSP [hull 1] 500...1000...1500...2000...2248 (1.50 seconds)
+SolidBSP [hull 2] 500...1000...1500...2000...2001 (1.33 seconds)
+SolidBSP [hull 3] 500...1000...1500...2000...2395 (1.72 seconds)
+Reduced 8591 clipnodes to 7758
+Reduced 1428 texinfos to 1184
+Reduced 167 texdatas to 164 (2414276 bytes to 2410808)
+Reduced 8962 planes to 3119
+FixBrinks:
+Increased 7758 clipnodes to 7917.
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models             80/512         5120/32768    (15.6%)
+planes           3119/32768      62380/655360   ( 9.5%)
+vertexes         7646/65535      91752/786420   (11.7%)
+nodes            3449/32767      82776/786408   (10.5%)
+texinfos         1184/32767      47360/1310680  ( 3.6%)
+faces            5103/65535     102060/1310700  ( 7.8%)
+* worldfaces     4626/32768          0/0        (14.1%)
+clipnodes        7917/32767      63336/262136   (24.2%)
+leaves           2295/32760      64260/917280   ( 7.0%)
+* worldleaves    1696/8192           0/0        (20.7%)
+marksurfaces     6926/65535      13852/131070   (10.6%)
+surfedges       24134/512000     96536/2048000  ( 4.7%)
+edges           13608/256000     54432/1024000  ( 5.3%)
+texdata          [variable]    2410808/33554432 ( 7.2%)
+lightdata        [variable]          0/50331648 ( 0.0%)
+visdata          [variable]          0/8388608  ( 0.0%)
+entdata          [variable]      19530/2097152  ( 0.9%)
+* AllocBlock       16/64             0/0        (25.0%)
+164 textures referenced
+=== Total BSP file data space used: 3114202 bytes ===
+Wad files required to run the map: (None)
+14.66 seconds elapsed
+
+-----   END   hlbsp -----
+
+
+
+hlvis v3.4 VL33 (Feb  2 2014)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlvis -----
+Command line: hlvis cs_assault_go.map -full 
+Arguments: cs_assault_go.map -full -low 
+ 728 portalleafs
+2205 numportals
+
+-= Current hlvis Settings =-
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       4 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [     off ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 33554432 ] [ 33554432 ]
+max vis distance    [       0 ] [       0 ]
+priority            [     Low ] [  Normal ]
+
+fast vis            [     off ] [     off ]
+full vis            [      on ] [     off ]
+
+
+BasePortalVis:
+ (0.97 seconds)
+LeafThread:
+ (110.81 seconds)
+average leafs visible: 183
+g_visdatasize:90589  compressed from 66248
+112.05 seconds elapsed [1m 52s]
+
+-----   END   hlvis -----
+
+
+
+hlrad v3.4 VL33 (Feb  2 2014)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (vluzacn@163.com)
+-----  BEGIN  hlrad -----
+Command line: hlrad cs_assault_go.map 
+Arguments: cs_assault_go.map -low 
+
+-= Current hlrad Settings =-
+Name                | Setting             | Default
+--------------------|---------------------|-------------------------
+threads              [                 4 ] [            Varies ]
+verbose              [               off ] [               off ]
+log                  [                on ] [                on ]
+developer            [                 0 ] [                 0 ]
+chart                [               off ] [               off ]
+estimate             [               off ] [               off ]
+max texture memory   [          33554432 ] [          33554432 ]
+max lighting memory  [          50331648 ] [          50331648 ]
+priority             [               Low ] [            Normal ]
+
+fast rad             [               off ] [               off ]
+vismatrix algorithm  [            Sparse ] [            Sparse ]
+oversampling (-extra)[               off ] [               off ]
+bounces              [                 8 ] [                 8 ]
+ambient light        [ 0.000 0.000 0.000 ] [ 0.000 0.000 0.000 ]
+light limit threshold[           188.000 ] [           188.000 ]
+circus mode          [               off ] [               off ]
+
+smoothing threshold  [            50.000 ] [            50.000 ]
+smoothing threshold 2[         no change ] [         no change ]
+direct threshold     [            10.000 ] [            10.000 ]
+direct light scale   [             1.000 ] [             1.000 ]
+coring threshold     [             0.010 ] [             0.010 ]
+patch interpolation  [                on ] [                on ]
+
+texscale             [                on ] [                on ]
+patch subdividing    [                on ] [                on ]
+chop value           [            64.000 ] [            64.000 ]
+texchop value        [            32.000 ] [            32.000 ]
+
+global fade          [             1.000 ] [             1.000 ]
+global light scale   [ 2.000 2.000 2.000 ] [ 2.000 2.000 2.000 ]
+global gamma         [ 0.550 0.550 0.550 ] [ 0.550 0.550 0.550 ]
+global light scale   [             2.000 ] [             2.000 ]
+global sky diffusion [             1.000 ] [             1.000 ]
+
+spread angles        [                on ] [                on ]
+opaque entities      [                on ] [                on ]
+sky lighting fix     [                on ] [                on ]
+incremental          [               off ] [               off ]
+dump                 [               off ] [               off ]
+
+colour jitter        [       0.0 0.0 0.0 ] [       0.0 0.0 0.0 ]
+monochromatic jitter [       0.0 0.0 0.0 ] [       0.0 0.0 0.0 ]
+
+custom shadows with bounce light
+                     [               off ] [               off ]
+rgb transfers        [               off ] [               off ]
+minimum final light  [                 0 ] [                 0 ]
+size of transfer     [         1 (16bit) ] [         1 (16bit) ]
+size of rgbtransfer  [         2 (32bit) ] [         2 (32bit) ]
+soft sky             [                on ] [                on ]
+translucent depth    [             2.000 ] [             2.000 ]
+block opaque         [                on ] [                on ]
+ignore textures      [               off ] [               off ]
+reflectivity gamma   [             1.760 ] [             1.760 ]
+reflectivity scale   [             0.700 ] [             0.700 ]
+blur size            [             1.500 ] [             1.500 ]
+no emitter range     [               off ] [               off ]
+wall bleeding fix    [                on ] [                on ]
+
+
+Load Textures:
+164 textures referenced
+Reading texlights from 'lights.rad'
+0 opaque models
+0 opaque faces
+5103 faces
+Create Patches : 17034 base patches
+253031 square feet [36436528.00 square inches]
+30 direct lights and 16386 fast direct lights
+3 light styles
+
+FindFacePositions:
+ (19.64 seconds)
+BuildFacelights:
+ (186.20 seconds)
+BuildVisLeafs:
+ (52.86 seconds)
+visibility matrix   :   6.7 megs
+MakeScales:
+ (39.08 seconds)
+Transfer Lists :    14521096 :    14.52M transfers
+       Indices :    11932572 :    11.38M bytes
+          Data :    29091230 :    27.74M bytes
+Bounce 1 GatherLight:
+ (1.56 seconds)
+Bounce 2 GatherLight:
+ (1.59 seconds)
+Bounce 3 GatherLight:
+ (1.58 seconds)
+Bounce 4 GatherLight:
+ (1.58 seconds)
+Bounce 5 GatherLight:
+ (1.58 seconds)
+Bounce 6 GatherLight:
+ (1.58 seconds)
+Bounce 7 GatherLight:
+ (1.58 seconds)
+Bounce 8 GatherLight:
+ (1.59 seconds)
+CreateTriangulations:
+ (1.31 seconds)
+AddPatchLights:
+ (15.78 seconds)
+FinalLightFace:
+ (0.11 seconds)
+331.56 seconds elapsed [5m 31s]
+
+-----   END   hlrad -----
+
+
+
